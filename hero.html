@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood Hero Sectioni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik, sans-serif";
+        color: #fff;
+      }
+      .container {
+        /* CENTERING */
+        margin: 0 auto;
+        width: 1200px;
+      }
+      .header-container {
+        /* CENTERING */
+        width: 1200px;
+        position: absolute;
+        /* IN RELATION TO PARENT ELEMENT */
+        left: 50%;
+        top: 50%;
+
+        /* IN RELATION TO ELEMENT */
+        transform: translate(-50%, -50%);
+
+        /* background-color: orchid; */
+      }
+
+      .header-container-inner {
+        width: 50%;
+        /* background-color: seagreen; */
+      }
+
+      header {
+        /* background-color: orangered; */
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.616),
+            rgba(0, 0, 0, 0.616)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        /* background-image: linear-gradient(to right, red, blue); */
+
+        /* background-color: green; */
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 40px;
+      }
+
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>a Healthy meal delivered to your door</h1>
+          <p>
+            SMAER DIET 365 DAYS A YEAR Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Fuga, dolores illum aliquam repellat id!
+          </p>
+
+          <a class="btn" href="#">Start Eating Well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>RANDOM HEADING</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sint
+          at modi totam cum optio quae ratione? Unde laudantium vel ullam illo
+          ratione! Illo repellendus vel, qui similique perferendis porro.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

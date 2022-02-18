@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagination Component</title>
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /* MAIN COLOR: #087f5b */
+      /* GREY COLOR: #343a40 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      table {
+        width: 200px;
+      }
+
+      td {
+      }
+      .btn:link,
+      .btn:visited {
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-icon {
+        stroke: #087f5b;
+      }
+      .btn:hover,
+      .btn:active {
+        background-color: #087f5b;
+      }
+      .btn:hover .btn-icon {
+        stroke: #fff;
+      }
+
+      .btn-number {
+        text-decoration: none;
+        color: #343a40;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+      }
+      .btn-number:hover {
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+        color: white;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+      }
+      .btn-active {
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+        color: white;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <th>
+        <tr>
+          <td>
+            <a class="btn" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </a>
+          </td>
+          <td><a class="btn-number" href="#">1</a></td>
+          <td><a class="btn-number" href="#">2</a></td>
+          <td><a class="btn-number btn-active" href="#">3</a></td>
+          <td><a class="btn-number" href="#">4</a></td>
+          <td><a class="btn-number" href="#">5</a></td>
+          <td><a class="btn-number" href="#">6</a></td>
+          <td><span>...</span></td>
+          <td><a class="btn-number" href="#">23</a></td>
+          <td>
+            <a class="btn" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </td>
+        </tr>
+      </th>
+    </table>
+  </body>
+</html>
